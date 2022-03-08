@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Enhance: Heti -->
+    <link rel="stylesheet" href="//unpkg.com/heti/umd/heti.min.css">
+    <script async src="//unpkg.com/heti/umd/heti-addon.min.js"></script>
+    <script>
+        const heti = new Heti('.heti');
+        heti.autoSpacing(); // 自动进行中西文混排美化和标点挤压
+    </script>
+
+    <!-- Font: Noto Sans TC -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>CSC - 停止服務</title>
+
+    <style>
+        body {
+            background: url("./assets/Background.webp") center/cover;
+        }
+
+        .container {
+            height: 100vh;
+            width: 50vw;
+
+            margin: 4em auto;
+        }
+
+        @media (max-width: 800px) {
+            .container {
+                width: 80vw;
+            }
+        }
+
+        .logo {
+            margin-bottom: 3em;
+        }
+
+        article.content {
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 1.1em;
+
+            color: #424242;
+        }
+
+        h1 {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main>
+            <section class="logo">
+                <img alt="CSCheckin Logo" src="./assets/Logo.svg">
+            </section>
+            <article class="content heti">
+                <h1>服務停止通知</h1>
+                <p>做好早安這件事，可以說已經成為了全民運動。奧斯在不經意間這樣說過，不能光是揭露人家過去的錯誤，而不尊重人家目前的為人。這不禁令我深思。早安絕對是史無前例的。謹慎地來說，我們必須考慮到所有可能。沃維納格深信，懶人總希望有所作為。這段話看似複雜，其中的邏輯思路卻清晰可見。</p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
