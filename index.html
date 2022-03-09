@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
 
-    <title>CSC - 停止服務</title>
+    <title>CSC － 服務終止通知</title>
 
     <style>
         body {
@@ -28,7 +28,7 @@
         }
 
         .container {
-            margin: 4em auto;
+            margin: 4em auto 0 auto;
             width: 50vw;
         }
 
@@ -39,7 +39,32 @@
         }
 
         .logo {
-            margin-bottom: 3em;
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 1.5em;
+
+            display: flex;
+            align-content: center;
+            align-items: center;
+
+            font-weight: bold;
+
+            margin-bottom: 2em;
+        }
+
+        .logo > .img {
+            display: flex;
+            align-content: center;
+            margin-top: 0.16em;
+        }
+
+        .logo > .title {
+            color: #424242;
+            margin-left: -0.6em;
+        }
+
+        .logo > .title:before {
+            content: "｜";
+            margin-top: 0.16em;
         }
 
         article.content {
@@ -57,13 +82,15 @@
     <div class="container">
         <main>
             <section class="logo">
-                <img alt="CSCheckin Logo" src="./assets/Logo.svg">
+                <div class="img">
+                    <img alt="CSCheckin Logo" src="./assets/Logo.svg">
+                </div>
+                <div class="title">
+                    服務終止通知
+                </div>
             </section>
             <article class="content heti">
-                <h1>服務停止通知</h1>
-                <p>因運營成本大於平台使用量，我們決定暫停 CSC 公開服務的運營。</p>
-                <p>若造成不便也請見諒。</p>
-                <hr>
+                <p>因目前之運營成本大於平台使用量，我們決定終止 CSC 公開服務的運營。</p>
                 <p>
                     若您是企業或教育使用者，且對 CSC 服務有剛需，您可以自行架設 CSC 服務的
                     <br>
@@ -72,8 +99,9 @@
                     <a href="https://github.com/smhs-os-project/cscheckin-be">「後端」。</a>
                 </p>
                 <p>
-                    若需獨立支援，請聯絡信箱：<a href="mailto:cscheckin@googlegroups.com">cscheckin@googlegroups.com</a>
+                    如需獨立支援，請聯絡信箱：<a href="mailto:cscheckin@googlegroups.com">cscheckin@googlegroups.com</a>
                 </p>
+                <p>若造成不便也請見諒。</p>
                 </section>
         </main>
     </div>
